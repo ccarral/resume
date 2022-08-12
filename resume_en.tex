@@ -11,11 +11,17 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+% \usepackage[hidelinks]{hyperref}
+% \usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \input{glyphtounicode}
+
+% \hypersetup{
+    % colorlinks=true
+% }
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -30,7 +36,7 @@
 \addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
 
-\urlstyle{same}
+% \urlstyle{same}
 
 \raggedbottom
 \raggedright
@@ -91,8 +97,8 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://github.com/ccarral}{\Large Carlos Carral Cortés}} & Email : \href{mailto:carloscarral13@gmail.com}{carloscarral13@gmail.com}\\
-  \href{https://ccarral.github.io}{https://ccarral.github.io} & Mobile : +52-722-538-7535 \\
+  \textbf{\href{https://www.linkedin.com/in/carlos-carral-b668371a2}{\Large Carlos Carral Cortés}} & Email : \href{mailto:carloscarral13@gmail.com}{carloscarral13@gmail.com}\\
+  \href{https://ccarral.github.io/en}{https://ccarral.github.io/en} & Mobile : +52-722-538-7535 \\
 \end{tabular*}
 
 
@@ -108,7 +114,9 @@
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading{UAEMex, Secretaría de Planeación y Desarrollo.}{Toluca, Estado de México}
-      {DBA and Automation Solutions Developer}{Jan 2021 - Jul 2021}
+      {DBA and Automated Solutions Developer}{Aug 2020 - March 2021}
+    \resumeSubheading{Aventura Paphijos}{Toluca, Estado de México}
+      {Group leader and staff training.}{Jan 2016 - Jul 2022}
       % \resumeItemListStart
         % \resumeItem{Tensorflow}
           % {TensorFlow is an open source software library for numerical computation using data flow graphs; primarily used for training deep learning models. Worked on APIs and performance for training models on Tensor Processing Units (TPU).}
@@ -176,18 +184,41 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{Sly Proxy}
-      {Multi target, dynamic TCP proxy using Rust + Tokio for the back end, listening on a single port and
-      choosing from a multitude of targets thanks to eBPF programming.}
-    \resumeSubItem{Schedule Engine}
-      {Rust-programmed, embedded WASM scheduling engine that helps students create a class schedule that fits their needs. Currently at use 
-      on my \href{https://uaemex.com}{alma-mater's website} and on display on my blog.}
-    \resumeSubItem{mini6502}
-      {Simple and lightweight 6502 emulation library written in rust.}
-    \resumeSubItem{Cosmic Cube}
-      {My personal blog, developed with VuePress, where I post some technical writing, do some WASM experimentation and elaborate on personal thoughts.}
+    \resumeSubItem{\href{https://sigeho-test-040522.netlify.app/}{sched.it}}
+      {Scheduling engine and web application that helps students create a
+      class schedule that fits their needs. Currently on open beta,
+      with a writeup on my \href{https://ccarral.github.io/en/projects/schedule-creator/}{blog}.
+      Developed in rust, embedded in the browser via WASM + Vue.}
+
+    \resumeSubItem{Tank}
+      {Simple didactic programming language for manipulating a Tank in a
+      12 x 12 grid, with an
+      \href{https://github.com/ccarral/interprete-tanques}{interpreter} developed in
+      rust, powering a \href{https://github.com/ccarral/tank-engine}{game engine} \href{https://github.com/ccarral/tank-vue}{embedded in the browser} via WASM + Vue.}
+
+    % \resumeSubItem{Sly Proxy}
+      % {Multi target, dynamic TCP proxy using Rust + Tokio for the back end, listening on a single port and
+      % choosing from a multitude of targets thanks to eBPF programming.}
+
+    \resumeSubItem{\href{https://github.com/ccarral/mini6502}{mini6502}}
+      {Simple and lightweight 6502 emulation library developed in pure rust.}
+    \resumeSubItem{\href{https://github.com/ccarral/c-sudoku}{c-sudoku}}
+      {Backtracking sudoku solver written in C.}
+    \resumeSubItem{\href{https://github.com/ccarral/ensamblador8086}{ensamblador8086}}
+      {Mock one pass x86 assembler. Generates code for a subset of the x86
+      instruction set. Implemented with antlr4.}
   \resumeSubHeadingListEnd
 
+% --------CERTIFICATIONS------------
+\section{Certifications}
+ \resumeSubHeadingListStart
+  \resumeSubItem{Scrum Fundamentals Certified (SFC)}{
+  \href{https://www.scrumstudy.com/certification/verify?type=SFC&number=931455}{SCRUMstudy - Accreditation Body for Scrum and Agile}.}
+  \resumeSubItem{Advanced C
+  Programming}{\href{https://ude.my/UC-0dadf9b3-11ae-4f4d-8a76-6f1aa45b2b53/}{Udemy
+  2022 certificate}.}
+ \resumeSubHeadingListEnd
+%-------------------------------------------
 
 % --------PROGRAMMING SKILLS------------
 \section{Programming Skills}
@@ -196,25 +227,27 @@
   applications with async programming using Tokio.}
   \resumeSubItem{WASM}{Implementation of backends fully embedded in the
   DOM with a Rust +
-  \href{https://rustwasm.github.io/wasm-pack/}{wasm-pack} + Vue 3 stack.}
-  \resumeSubItem{Linux kernel programming}{Knowledgeable in kernel internals and debugging tools.}
+  wasm-pack + Vue 3 stack.}
+  \resumeSubItem{Linux programming}{sysadmin tools and linux
+  programming in general. Knowledgeable in kernel internals and debugging tools.}
   \resumeSubItem{Scripting}{Task automatization with Python and Bash.}
   \resumeSubItem{VCS}{Advanced Git and Github workflows.}
   \resumeSubItem{MySQL, Oracle Database}{Design and implementation
   of normalized schemas and backup strategies.}
   \resumeSubItem{Full stack Vue 3}{Design of reactive, modern websites
   with the full Vue 3 component and routing stack.}
+  \resumeSubItem{Java programming}{Design and implementation of java
+  programs from the ground up, using maven and gradle as build systems.}
 \resumeSubHeadingListEnd
 
+% --------SOFT SKILLS------------
 \section{Soft Skills}
  \resumeSubHeadingListStart
   \resumeSubItem{Team leader}{Pushing a team in the right direction by
-  quickly stablishing a common technical floor, opening channels for productive discussion,finding pain points and
+  quickly stablishing a common technical floor, opening channels for productive discussion, finding pain points and
   solving conflicts.}
   \resumeSubItem{Communication skills}{Relaying key technical items in easy to understand terms to non-technical peers.}
   \resumeSubItem{Fast learner}{Quick parsing of highly technical content such as code, documentation, research papers, etc.}
  \resumeSubHeadingListEnd
 
-
-%-------------------------------------------
 \end{document}
