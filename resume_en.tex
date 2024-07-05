@@ -59,6 +59,10 @@
   }
 }
 
+\newcommand{\resumeItemAtom}[1]{
+  \item\small{#1}
+}
+
 % Just in case someone needs a heading that does not need to be in a list
 \newcommand{\resumeHeading}[4]{
     \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -82,6 +86,7 @@
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubItemAtom}[1]{\resumeItemAtom{#1}\vspace{-4pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
@@ -98,180 +103,126 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-	\textbf{\href{https://www.linkedin.com/in/carlos-carral-b668371a2}{\Large Carlos Carral Cortés}} & Email : \href{mailto:carloscarral13@gmail.com}{carloscarral13@gmail.com}\\
+	\textbf{\href{https://www.linkedin.com/in/carlos-carral-b668371a2}{\Large Carlos Carral Cortés - Software Engineer}} & Email : \href{mailto:carloscarral13@gmail.com}{carloscarral13@gmail.com}\\
 	\href{https://ccarral.github.io/en}{https://ccarral.github.io/en} & Mobile : +52-722-538-7535 \\
 	& Location: Mexico
 \end{tabular*}
 
 % \vspace{20pt}
-\section{Profile}
-Computer engineer experienced in backend development. Fast learner and open to exploring
-new tools. I enjoy solving deeply technical problems and delving into the workings of high
-performance, resource-aware applications.
+% \section{Profile}
+% Developer with experience in popular front and backend development tools such as python, java and javascript frameworks.
+% Experienced in advanced development workflows with Docker/Kubernetes with Redhat Quay.
+% Experienced in embedded development with C and rust.
+% Advanced development workflows with git, github and gitlab.
+
+%-----------EXPERIENCE-----------------
+\section{Professional Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{Vauxoo}{Remote, México}
+{Python Developer}{Sep 2022 - Apr 2024}
+\resumeItemListStart
+% \resumeItem{Python and javascript development}
+% {Development of a rust-based scheduling engine that assigns time-constrained resources to physical locations.}
+% \resumeItem{Asynchronous programming}
+% {Asynchronous programming using the Tokio runtime for production applications.}
+\resumeItemAtom{Succesfully integrated external and internal REST APIs and xmlrpc procedures.}
+% \resumeItemAtom{Developed and delivered software handling CSV and XLS raw data.}
+\resumeItemAtom{Designed and implemented over 30+ new features in backend and frontend with python and Typescript.}
+\resumeItemAtom{Drove migration of several mission-critical legacy systems, responsible for over 300+ transactions a day.}
+\resumeItemAtom{Increased speed of report generation for critical subsystems by 400\%.}
+\resumeItemAtom{Filed, reproduced, tracked  and fixed over 60+ production bugs.}
+\resumeItemAtom{Debugged faulty pipelines and production Docker configurations.}
+\resumeItemAtom{Contributed to large scale open source software.}
+\resumeItemAtom{Met with stakeholders and addressed project requirements, deadlines and removed roadblocks.}
+\resumeItemListEnd
+\resumeSubheading{UAEMex, Planning and developent department}{Toluca, Estado de México}
+{DBA and Automation engineer}{August 2020 - March 2021}
+\resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------------
 \section{Education}
 \resumeSubHeadingListStart
 \resumeSubheading
-{Mexico State Autonomous University}{Toluca, Estado de México}
-{Computer Engineering}{Aug 2017 -- Present}
+{Mexico State Autonomous University}{2023}
+{Bachelor's Degree in Computer Engineering}{Toluca, Estado de México}
+    \resumeItemListStart
+    \resumeItemAtom{Obtained "Premio Ceneval al Desempeño de Excelencia EGEL", \href{https://reconocimiento.ceneval.edu.mx/busqueda-de-reconocimientos-2/?resultId=37772}{academic excellence award for the top 2\% qualifiers of EGEL, Mexico's top choice for qualifying professionals.}}
+    \resumeItemListEnd
 \resumeSubheading
-{Tecnológico de Monterrey}{Toluca, Estado de México}
-{Highschool}{Aug 2013 -- Aug 2016}
+{Tecnológico de Monterrey}{}
+{Highschool}{Toluca, Estado de México}
 \resumeSubHeadingListEnd
-
-%-----------EXPERIENCE-----------------
-\section{Experience}
+% --------PROGRAMMING SKILLS------------
+\section{Technical Skills}
 \resumeSubHeadingListStart
-\resumeSubheading{Vauxoo, Backend developer}{Toluca, Estado de México}
-{Development of open source ERP software}{Sep 2023 - Present}
-\resumeSubheading{UAEMex, Planning and developent department}{Toluca, Estado de México}
-{DBA and Automation engineer}{Aug 2020 - March 2021}
-% \resumeItemListStart
-% \resumeItem{Tensorflow}
-% {TensorFlow is an open source software library for numerical computation using data flow graphs; primarily used for training deep learning models. Worked on APIs and performance for training models on Tensor Processing Units (TPU).}
-% \resumeItem{Apache Beam}
-% {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
-% \resumeItemListEnd
-
-% --------Multiple Positions Heading------------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
-
-% \resumeSubheading
-% {Coursera}{Mountain View, CA}
-% {Senior Software Engineer}{Jan 2014 - Oct 2016}
-% \resumeItemListStart
-% \resumeItem{Notifications}
-% {Service for sending email, push and in-app notifications. Involved in features such as delivery time optimization, tracking, queuing and A/B testing. Built an internal app to run batch campaigns for marketing etc.}
-% \resumeItem{Nostos}
-% {Bulk data processing and injection service from Hadoop to Cassandra and provides a thin REST layer on top for serving offline computed data online.}
-% \resumeItem{Workflows}
-% {Dataduct an open source workflow framework to create and manage data pipelines leveraging reusables patterns to expedite developer productivity.}
-% \resumeItem{Data Collection}
-% {Designed the internal survey and crowd sourcing platform which allowed for creating various tasks for crowd sourcing or embedding surveys across the Coursera platform.}
-% \resumeItem{Dev Environment}
-% {Analytics environment based on docker and AWS, standardized the python and R dependencies. Wrote the core libraries that are shared by all data scientists.}
-% \resumeItem{Data Warehousing}
-% {Setup, schema design and management of Amazon Redshift. Built an internal app for access to the data using a web interface. Dataduct integration for daily ETL injection into Redshift.}
-% \resumeItem{Recommendations}
-% {Core service for all recommendation systems at Coursera, currently used on the homepage and throughout the content discovery process. Worked on both offline training and online serving.}
-% \resumeItem{Content Discovery}
-% {Improved content discovery by building a new onboarding experience on coursera. Using this to personalize the search and browse experience. Also worked on ranking and indexing improvements.}
-% \resumeItem{Course Dashboards}
-% {Instructor dashboards and learner surveying tools, which helped instructors run their class better by providing data on Assignments and Learner Activity.}
-% \resumeItemListEnd
-
-% \resumeSubheading
-% {Lucena Research}{Atlanta, GA}
-% {Data Scientist}{Summer 2012 and 2013}
-% \resumeItemListStart
-% \resumeItem{Portfolio Management}
-% {Created models for portfolio hedging,  portfolio optimization and price forecasting. Also creating a strategy backtesting engine used for simulating and backtesting strategies.}
-% \resumeItem{QuantDesk}
-% {Python backend for a web application used by hedge fund managers for portfolio management.}
-% \resumeItemListEnd
-
-% \resumeSubheading
-% {Georgia Institute of Technology}{Atlanta, GA}
-% {Research and Teaching Assistant}{Jan 2012 - Dec 2013}
-% \resumeItemListStart
-% \resumeItem{Research Assistant - Machine Learning}
-% {Research on machine learning for portfolio hedging and replication algorithms. Modeling low-risk \& continuous-return strategies. Developed the python library QSTK.}
-% \resumeItem{Teaching Assistant - Computational Investing}
-% {The online course on Coursera, had more than 100,000 students enrolled. It was featured on the 11 Alive News and the Atlanta Journal Constitution. Involved in creating assignment, exams and conducting recitation sessions. Also taught the on-campus version of the course.}
-% \resumeItemListEnd
-
+\resumeSubItem{Full stack Vue 3}{Design of reactive, modern websites
+with the full Vue 3 component and routing stack.}
+\resumeSubItem{Backend development}{Python, Rust, Java Spring Boot, node and others.}
+% \resumeSubItem{Full-stack development}{Rust, Vue3, Python and Node}
+% \resumeSubItem{Embedded development}{Event-driven development on ESP and STM 64-bit boards.}
+    % \resumeItemListStart
+    % \resumeItemAtom{esp-idf}
+    % \resumeItemAtom{Arduino}
+    % \resumeItemAtom{Micropython}
+    % \resumeItemListEnd
+\resumeSubItem{Relational and NoSQL databases}{Postgresql, Oracle, MySQL, MongoDB.}
+\resumeSubItemAtom{\textbf{VCS with Git and Github}}
+% \resumeSubItem{WASM}{Implementation of backends fully embedded in the
+	% DOM with a Rust +
+	% wasm-pack + Vue 3 stack.}
+\resumeSubItem{Advanced UNIX skills}{}
+    \resumeItemListStart
+    \resumeItem{Installation}{Physical media and network installation of Solaris, RHEL, Ubuntu server and others.}
+    \resumeItem{Management}{Remote management of servers via ssh, vi, cron, systemd, etc.}
+    \resumeItemListEnd
+\resumeSubItem{Scripting}{Task automatization with Python and Bash.}
+\resumeSubItem{DevOps}{Docker virtualization in AWS workflows.}
 \resumeSubHeadingListEnd
-
 
 %-----------PROJECTS-----------------
-\section{Projects}
+\section{Related Projects and Write ups}
 \resumeSubHeadingListStart
+\resumeSubItem{\href{https://github.com/ccarral/minuteman}{minuteman}}
+{Event-driven embedded esp32 alarm clock, built on top of the C-based \href{https://github.com/espressif/esp-idf}{esp-idf} framework.}
+\resumeSubItem{\href{https://ccarral.github.io/schedit-client/?pools=https://ccarral.github.io/schedit-client/files/plantillaA.csv}{sched.it}}
+{Scheduling engine with a rust backend and a React web application.}
 \resumeSubItem{\href{https://ccarral.github.io/en/projects/hello_world_kernel_module/}{Writing
 		a simple linux kernel module with rust from the ground up}}{Technical
 	write up on writing a Linux Kernel Module using the
 	\href{https://github.com/Rust-for-Linux}{Rust-For-Linux} kernel tree
 	as base.}
-\resumeSubItem{\href{https://github.com/ccarral/sly-proxy}{sly-proxy}}
-{eBPF-backed TCP Proxy written in async rust with Tokio + Tower}
-\resumeSubItem{\href{https://github.com/ccarral/c-sudoku}{c-sudoku}}
-{Backtracking sudoku solver written in C.}
-\resumeSubItem{\href{https://sigeho-test-040522.netlify.app/}{sched.it}}
-{Scheduling engine and web application that helps students create a
-	class schedule that fits their needs. Currently on open beta,
-	with a writeup on my \href{https://ccarral.github.io/en/projects/schedule-creator/}{blog}.
-	Developed in rust, embedded in the browser via WASM + Vue.}
-\resumeSubItem{Tank}
-{Simple didactic programming language for manipulating a tank in a
-	12 x 12 grid, with an
-	\href{https://github.com/ccarral/interprete-tanques}{interpreter} developed in
-	rust, powering a \href{https://github.com/ccarral/tank-engine}{game engine} \href{https://github.com/ccarral/tank-vue}{embedded in the browser} via WASM + Vue.}
+\resumeSubItem{\href{https://github.com/ccarral/cp_liburing}{cp clone}}
+{Rust-based clone of the unix cp command, leveraging low-level io\_uring primitives.}
+\resumeSubItem{\href{https://github.com/ccarral/tank-vue}{tank}}
+{Didactic game, based on a simple programming language interpreter developed in rust.}
+% \resumeSubItem{\href{https://ccarral.github.io/en/projects/freertos_and_tasks/}{Fun with FreeRTOS and sync primitives}}
+% {Technical analysis on a real deadlock encountered while programming with FreeRTOS.}
+% \resumeSubItem{\href{https://github.com/ccarral/sly-proxy}{sly-proxy}}
+% {eBPF-backed TCP Proxy written in async rust with Tokio + Tower}
+% \resumeSubItem{\href{https://github.com/ccarral/c-sudoku}{c-sudoku}}
+% {Backtracking sudoku solver developed in C.}
+% \resumeSubItem{Tank}
+% {Simple didactic programming language for manipulating a tank in a
+    % 12 x 12 grid, with an
+    % \href{https://github.com/ccarral/interprete-tanques}{interpreter} developed in
+    % rust, powering a \href{https://github.com/ccarral/tank-engine}{game engine} \href{https://github.com/ccarral/tank-vue}{embedded in the browser} via WASM + Vue.}
 
-% \resumeSubItem{Sly Proxy}
-% {Multi target, dynamic TCP proxy using Rust + Tokio for the back end, listening on a single port and
-% choosing from a multitude of targets thanks to eBPF programming.}
-
-\resumeSubItem{\href{https://github.com/ccarral/mini6502}{mini6502}}
-{Simple and lightweight 6502 emulation library developed in pure rust.}
-\resumeSubItem{\href{https://github.com/ccarral/ensamblador8086}{ensamblador8086}}
-{Mock one pass x86 assembler. Generates code for a subset of the x86
-	instruction set. Implemented with antlr4.}
+% \resumeSubItem{\href{https://github.com/ccarral/mini6502}{mini6502}}
+% {Simple and lightweight 6502 emulation library developed in pure rust.}
+% \resumeSubItem{\href{https://github.com/ccarral/ensamblador8086}{ensamblador8086}}
+% {Mock one pass x86 assembler. Generates code for a subset of the x86
+	% instruction set. Implemented with antlr4.}
 \resumeSubHeadingListEnd
 
 % --------CERTIFICATIONS------------
-\section{Certifications}
+\section{Other}
 \resumeSubHeadingListStart
 \resumeSubItem{Scrum Fundamentals Certified (SFC)}{
 	\href{https://www.scrumstudy.com/certification/verify?type=SFC&number=931455}{SCRUMstudy - Accreditation Body for Scrum and Agile}.}
 \resumeSubItem{Advanced C
 	Programming}{\href{https://ude.my/UC-0dadf9b3-11ae-4f4d-8a76-6f1aa45b2b53/}{Udemy
 		2022 certificate}.}
-\resumeSubItem{Advanced English}{B1 Cambridge Certification + High
-	Scoring TOEFL grade.}
+\resumeSubItem{Languages}{Spanish (native), English (fluent).}
 \resumeSubHeadingListEnd
 %-------------------------------------------
-
-% --------PROGRAMMING SKILLS------------
-\section{Technical Skills}
-\resumeSubHeadingListStart
-% \resumeSubItem{Full stack Vue 3}{Design of reactive, modern websites
-% with the full Vue 3 component and routing stack.}
-\resumeSubItem{Back end development}{Microservices-based back end
-	development with
-	either Python, Java Spring, Node or Rust.}
-\resumeSubItem{WASM}{Implementation of backends fully embedded in the
-	DOM with a Rust +
-	wasm-pack + Vue 3 stack.}
-\resumeSubItem{Linux programming}{Over 5 years of daily linux use,
-	expertise in sysadmin tools and linux
-	programming in general. Knowledgeable in kernel internals and debugging tools.}
-\resumeSubItem{Scripting}{Task automatization with Python and Bash.}
-\resumeSubItem{VCS}{Advanced Git and Github workflows.}
-\resumeSubItem{Databases}{Design and implementation
-	of normalized schemas and backup strategies + non relational databases
-	(nosql)}
-\resumeSubItem{CI/CD and Containers}{Experienced in continous integration setups with Docker containarization.}
-% \resumeSubItem{Java backend development}{Microservice based back end
-% development, with Java EE + Apache + Spring Boot and maven/gradle build
-% systems.}
-\resumeSubHeadingListEnd
-
-% --------SOFT SKILLS------------
-\section{Soft Skills}
-\resumeSubHeadingListStart
-\resumeSubItem{Fast learner}{Quick parsing of highly technical content
-	such as code, documentation, RFC's, research papers, etc.}
-\resumeSubItem{Communication skills}{Relaying key technical items in easy to understand terms to non-technical peers.}
-\resumeSubItem{Team leader}{Pushing a team in the right direction by
-	quickly stablishing a common technical floor, opening channels for productive discussion, finding pain points and
-	solving conflicts.}
-\resumeSubHeadingListEnd
-
 \end{document}
